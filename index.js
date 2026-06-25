@@ -12,7 +12,8 @@ const getApi = async (url) => {
 
 getApi(api);
 const cards = document.querySelector(".cards");
-cards.innerHTML = "Loading";
+const loading = "Loading";
+cards.innerHTML = loading;
 function showProducts(result) {
   cards.innerHTML = "";
   result.forEach((element) => {
@@ -20,12 +21,14 @@ function showProducts(result) {
     console.log();
     cards.innerHTML += `
         <div class="card">
+          <div class="image-box">
+            <img src="${element.images}" alt="${title}" class="image" />
+          </div>
           <h4 class="card-title">${title}</h4>
           <p class="category">${category}</p>
           <p class="description">${description}</p>
           <p class="price">${price}</p>
         </div>
-
     `;
   });
 }
