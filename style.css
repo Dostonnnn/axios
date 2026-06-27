@@ -5,7 +5,7 @@
   font-family: "Roboto", sans-serif;
 }
 body {
-  background-color: white;
+  background-color: #fff2db;
   color: #333333;
   transition:
     background-color 0.3s ease,
@@ -44,7 +44,7 @@ body {
   height: 350px;
   transition: all 0.3s linear;
   padding: 20px;
-  background-color: #fdfdfd;
+  background-color: #ffe5bf;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .card:hover {
